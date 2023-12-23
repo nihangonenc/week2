@@ -1,0 +1,2 @@
+Boks maçını simüle eder.
+
