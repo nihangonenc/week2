@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     static boolean isPalindrome(String str) {
         //Eğer bir kelimenin tersten okunuşu yine aynı kelimeyi veriyorsa o kelime Palindromik Kelimedir.
@@ -15,6 +17,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome("abba"));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Palindromik olup olmadığını merak ettiğiniz kelimeyi giriniz:" );
+        String word = input.nextLine();
+        System.out.println(isPalindrome(word));
     }
 }
